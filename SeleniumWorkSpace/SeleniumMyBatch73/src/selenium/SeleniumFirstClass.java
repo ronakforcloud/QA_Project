@@ -1,0 +1,17 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeleniumFirstClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FirefoxDriver drive = new FirefoxDriver();
+		drive.get("https://www.facebook.com/");
+		drive.findElement(By.id("email")).sendKeys("abcdefg");
+		drive.findElement(By.id("pass")).sendKeys("aaaaaaaa");
+		drive.findElement(By.name("login")).click();
+	}
+
+}
